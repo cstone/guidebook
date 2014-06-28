@@ -12,7 +12,7 @@
         <a href='#/addNote/{{chapter.id}}'>add note</a>
     </p>
 
-<ul class="notes" ng-show='chapter.id == '>
+<ul class="notes" ng-show='chapter.id == $scope.selectedChapterId'>
 <li ng-repeat='note in chapter.notes | orderBy: "id"'>
 <div>#{{index}}</div>
 <div><a href ng-click='onDelete(note.id)'>delete</a></div>
