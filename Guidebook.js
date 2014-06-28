@@ -19,3 +19,5 @@ var guidebookConfig = function($routeProvider) {
     ;
 };
 
+var Guidebook = angular.module('Guidebook', []).
+    config(guidebookConfig);
